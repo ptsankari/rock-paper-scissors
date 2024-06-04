@@ -45,7 +45,7 @@
     <center>
     <div id="mainbody">
    
-    <div id="leftside">
+    <div id="main">
     <h1>Rock paper scissors game</h1>
 <div id="mainitems" style="display: inline;">
     <button onclick="game('rock');"><img src="rockimg.jpg" class="imgrock"></button>
@@ -133,7 +133,7 @@ else if (move=== 'scissors') {
     updatescore();
 
     document.querySelector('.jsresult').innerHTML=res;
-    document.querySelector('.jsmoves').innerHTML = `You ${move} - ${computemove} Computer`;
+    document.querySelector('.jsmoves').innerHTML = `You chose "${move}" <br> Computer chose "${computemove}"`;
 }
 
 
